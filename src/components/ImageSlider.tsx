@@ -22,6 +22,21 @@ const slides: Slide[] = [
     image: '/uploads/slide3.jpg',
     quote: 'The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you; in his love he will no longer rebuke you, but will rejoice over you with singing.',
     reference: 'Zephaniah 3:17'
+  },
+  {
+    image: '/uploads/slide4.jpg',
+    quote: 'And we know that in all things God works for the good of those who love him, who have been called according to his purpose.',
+    reference: 'Romans 8:28'
+  },
+  {
+    image: '/uploads/slide5.jpg',
+    quote: 'Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.',
+    reference: 'Joshua 1:9'
+  },
+  {
+    image: '/uploads/slide6.jpg',
+    quote: 'But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.',
+    reference: 'Isaiah 40:31'
   }
 ];
 
