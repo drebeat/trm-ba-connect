@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout';
 import Hero from '@/components/Hero';
+import ImageSlider from '@/components/ImageSlider';
 import { Link } from 'react-router-dom';
 import { Calendar, MessageCircle, BookOpen, Users, Heart, ArrowRight } from 'lucide-react';
 
@@ -59,6 +60,21 @@ const Index = () => {
     <Layout>
       {/* Hero Section */}
       <Hero />
+
+      {/* Image Slider with Scripture */}
+      <section className="section-padding bg-gradient-to-br from-background to-muted/20">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">
+              Words of <span className="text-primary">Inspiration</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Let God's Word encourage and strengthen your faith journey
+            </p>
+          </div>
+          <ImageSlider />
+        </div>
+      </section>
 
       {/* Features Section */}
       <section className="section-padding bg-gradient-subtle">
