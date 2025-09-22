@@ -26,9 +26,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center shadow-medium group-hover:shadow-glow transition-all duration-300">
-              <Cross className="w-6 h-6 text-white" />
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="The Renewed Minds Believers' Assembly Logo" 
+              className="w-12 h-12 object-contain group-hover:scale-105 transition-transform duration-300"
+            />
             <div>
               <div className="font-heading font-bold text-lg text-secondary">TRM-BA</div>
               <div className="text-xs text-muted-foreground -mt-1">Renewed Minds</div>
