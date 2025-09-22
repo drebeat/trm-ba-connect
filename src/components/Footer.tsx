@@ -26,9 +26,11 @@ const Footer = () => {
           {/* Logo & Mission */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center shadow-medium">
-                <Cross className="w-6 h-6 text-white" />
-              </div>
+              <img 
+                src="/logo.png" 
+                alt="The Renewed Minds Believers' Assembly Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <div className="font-heading font-bold text-lg">TRM-BA</div>
                 <div className="text-xs text-secondary-foreground/70">Renewed Minds</div>
