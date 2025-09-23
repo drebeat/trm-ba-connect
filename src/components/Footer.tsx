@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <img
-                src="/logo.png"
+                src="/logo2.jpeg"
                 alt="The Renewed Minds Believers' Assembly Logo"
                 className="w-24 h-24 object-contain"
               />
