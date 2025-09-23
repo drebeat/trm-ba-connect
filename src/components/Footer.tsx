@@ -1,21 +1,29 @@
-import { Link } from 'react-router-dom';
-import { Cross, Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from "react-router-dom";
+import {
+  Cross,
+  Facebook,
+  Instagram,
+  Youtube,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Prayer Request', href: '/prayer' },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Blog", href: "/blog" },
+    { name: "Prayer Request", href: "/prayer" },
   ];
 
   const programs = [
-    { name: 'Sunday Services', href: '/programs' },
-    { name: 'Morning Dew Devotionals', href: '/programs' },
-    { name: 'Annual Conferences', href: '/programs' },
-    { name: 'Weekly Meetings', href: '/programs' },
+    { name: "Sunday Services", href: "/programs" },
+    { name: "Morning Dew Devotionals", href: "/programs" },
+    { name: "Annual Conferences", href: "/programs" },
+    { name: "Weekly Meetings", href: "/programs" },
   ];
 
   return (
@@ -26,21 +34,24 @@ const Footer = () => {
           {/* Logo & Mission */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <img 
-                src="/logo.png" 
-                alt="The Renewed Minds Believers' Assembly Logo" 
-                className="w-12 h-12 object-contain"
+              <img
+                src="/logo.png"
+                alt="The Renewed Minds Believers' Assembly Logo"
+                className="w-24 h-24 object-contain"
               />
               <div>
                 <div className="font-heading font-bold text-lg">TRM-BA</div>
-                <div className="text-xs text-secondary-foreground/70">Renewed Minds</div>
+                <div className="text-xs text-secondary-foreground/70">
+                  Renewed Minds
+                </div>
               </div>
             </div>
             <p className="text-sm text-secondary-foreground/80 mb-6 leading-relaxed">
-              Building renewed minds and transformed lives through the power of God's Word. 
-              Join us in our journey of faith, fellowship, and spiritual growth.
+              Building renewed minds and transformed lives through the power of
+              God's Word. Join us in our journey of faith, fellowship, and
+              spiritual growth.
             </p>
-            
+
             {/* Newsletter Signup */}
             <div>
               <h4 className="font-semibold mb-3">Stay Connected</h4>
@@ -59,7 +70,9 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-heading font-semibold text-lg mb-6">Quick Links</h3>
+            <h3 className="font-heading font-semibold text-lg mb-6">
+              Quick Links
+            </h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -76,7 +89,9 @@ const Footer = () => {
 
           {/* Programs */}
           <div>
-            <h3 className="font-heading font-semibold text-lg mb-6">Programs</h3>
+            <h3 className="font-heading font-semibold text-lg mb-6">
+              Programs
+            </h3>
             <ul className="space-y-3">
               {programs.map((program) => (
                 <li key={program.name}>
@@ -93,12 +108,15 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-heading font-semibold text-lg mb-6">Contact Info</h3>
+            <h3 className="font-heading font-semibold text-lg mb-6">
+              Contact Info
+            </h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div className="text-sm text-secondary-foreground/80">
-                  123 Faith Avenue<br />
+                  123 Faith Avenue
+                  <br />
                   Lagos, Nigeria
                 </div>
               </div>
@@ -121,23 +139,29 @@ const Footer = () => {
               <h4 className="font-semibold mb-3">Follow Us</h4>
               <div className="flex space-x-3">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/share/178iceedh6/"
                   className="w-10 h-10 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:shadow-glow"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/therenewedminds_ba?igsh=MXhtdTdxenA4a2RtMw=="
                   className="w-10 h-10 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:shadow-glow"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://youtube.com/@therenewedminds?si=gy6c24U1wv5JFd_b"
                   className="w-10 h-10 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:shadow-glow"
                 >
                   <Youtube className="w-5 h-5" />
                 </a>
+                {/* <a
+                  href="https://t.me/therenewedmindz"
+                  className="w-10 h-10 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:shadow-glow"
+                >
+                  <Telegram className="w-5 h-5" />
+                </a> */}
               </div>
             </div>
           </div>
@@ -147,13 +171,20 @@ const Footer = () => {
         <div className="py-6 border-t border-secondary-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-secondary-foreground/60">
-              © {currentYear} The Renewed Minds Believers' Assembly. All rights reserved.
+              © {currentYear} The Renewed Minds Believers' Assembly. All rights
+              reserved.
             </div>
             <div className="flex space-x-6 text-sm text-secondary-foreground/60">
-              <Link to="/privacy" className="hover:text-primary transition-colors duration-200">
+              <Link
+                to="/privacy"
+                className="hover:text-primary transition-colors duration-200"
+              >
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="hover:text-primary transition-colors duration-200">
+              <Link
+                to="/terms"
+                className="hover:text-primary transition-colors duration-200"
+              >
                 Terms of Service
               </Link>
             </div>

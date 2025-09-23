@@ -1,19 +1,19 @@
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Cross } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, Cross } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Prayer Request', href: '/prayer' },
-    { name: 'Programs & Events', href: '/programs' },
-    { name: 'Contact Us', href: '/contact' },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Blog", href: "/blog" },
+    { name: "Prayer Request", href: "/prayer" },
+    { name: "Programs & Events", href: "/programs" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   const isActive = (href: string) => {
@@ -26,14 +26,18 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <img 
-              src="/logo.png" 
-              alt="The Renewed Minds Believers' Assembly Logo" 
-              className="w-12 h-12 object-contain group-hover:scale-105 transition-transform duration-300"
+            <img
+              src="/logo.png"
+              alt="The Renewed Minds Believers' Assembly Logo"
+              className="w-24 h-24 object-contain group-hover:scale-105 transition-transform duration-300"
             />
             <div>
-              <div className="font-heading font-bold text-lg text-secondary">TRM-BA</div>
-              <div className="text-xs text-muted-foreground -mt-1">Renewed Minds</div>
+              <div className="font-heading font-bold text-lg text-secondary">
+                TRM-BA
+              </div>
+              <div className="text-xs text-muted-foreground -mt-1">
+                Renewed Minds
+              </div>
             </div>
           </Link>
 
@@ -45,9 +49,7 @@ const Navigation = () => {
                 to={item.href}
                 className={cn(
                   "text-sm font-medium transition-colors duration-200 hover:text-primary relative",
-                  isActive(item.href) 
-                    ? "text-primary" 
-                    : "text-foreground"
+                  isActive(item.href) ? "text-primary" : "text-foreground"
                 )}
               >
                 {item.name}
