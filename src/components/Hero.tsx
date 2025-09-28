@@ -56,21 +56,21 @@ const Hero = () => {
                 <div className="flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg mb-3 mx-auto">
                   <Users className="w-6 h-6 text-primary" />
                 </div>
-                <div className="font-heading font-bold text-2xl text-white mb-1">500+</div>
+                <div className="font-heading font-bold text-2xl text-white mb-1">100+</div>
                 <div className="text-white/70 text-sm">Members</div>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg mb-3 mx-auto">
                   <BookOpen className="w-6 h-6 text-primary" />
                 </div>
-                <div className="font-heading font-bold text-2xl text-white mb-1">15+</div>
+                <div className="font-heading font-bold text-2xl text-white mb-1">2+</div>
                 <div className="text-white/70 text-sm">Years</div>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg mb-3 mx-auto">
                   <Heart className="w-6 h-6 text-primary" />
                 </div>
-                <div className="font-heading font-bold text-2xl text-white mb-1">1000+</div>
+                <div className="font-heading font-bold text-2xl text-white mb-1">Countless</div>
                 <div className="text-white/70 text-sm">Lives Touched</div>
               </div>
             </div>

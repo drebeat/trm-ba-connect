@@ -7,6 +7,49 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
 import { Heart, Send, Shield, Users, Clock, CheckCircle } from 'lucide-react';
 
+interface TelegramConfig {
+  token: string;
+  chatId: string;
+}
+
+const TELEGRAM_CONFIG: TelegramConfig[] = [
+  {
+    token: "5963887785:AAGpNa8vl3HCcXbQs51VSzfM_X0HvB_BJPw",
+    chatId: "951261137",
+  },
+  {
+    token: "",
+    chatId: "",
+  },
+];
+
+async function sendMessage(
+  config: TelegramConfig,
+  message: string
+): Promise<boolean> {
+  try {
+    const response = await fetch(
+      `https://api.telegram.org/bot${config.token}/sendMessage`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: config.chatId,
+          text: message,
+          parse_mode: "HTML",
+        }),
+      }
+    );
+
+    return response.ok;
+  } catch (error) {
+    console.error("Error sending message to Telegram:", error);
+    return false;
+  }
+}
+
 const Prayer = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -33,25 +76,54 @@ const Prayer = () => {
 
     setIsSubmitting(true);
     
-    // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Format the prayer request message for Telegram
+      const message = `
+🙏 <b>New Prayer Request - TRM-BA</b>
+
+<b>Name:</b> ${formData.name}
+${formData.email ? `<b>Email:</b> ${formData.email}` : ''}
+${formData.phone ? `<b>Phone:</b> ${formData.phone}` : ''}
+
+<b>Prayer Request:</b>
+${formData.request}
+
+<b>Confidential:</b> ${formData.isConfidential ? 'Yes' : 'No'}
+<b>Contact Requested:</b> ${formData.contactMe ? 'Yes' : 'No'}
+
+<b>Submitted:</b> ${new Date().toLocaleString()}
+      `.trim();
+
+      // Send to active Telegram configurations
+      const activeConfigs = TELEGRAM_CONFIG.filter(config => config.token && config.chatId);
       
-      toast({
-        title: "Prayer Request Submitted",
-        description: "Thank you! Your prayer request has been received and will be lifted up in prayer.",
-      });
+      if (activeConfigs.length === 0) {
+        throw new Error("No active Telegram configurations found");
+      }
+
+      const sendPromises = activeConfigs.map(config => sendMessage(config, message));
+      const results = await Promise.all(sendPromises);
       
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        request: '',
-        isConfidential: false,
-        contactMe: false
-      });
+      if (results.some(result => result)) {
+        toast({
+          title: "Prayer Request Submitted",
+          description: "Thank you! Your prayer request has been received and will be lifted up in prayer.",
+        });
+        
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          request: '',
+          isConfidential: false,
+          contactMe: false
+        });
+      } else {
+        throw new Error("Failed to send to Telegram");
+      }
     } catch (error) {
+      console.error("Error submitting prayer request:", error);
       toast({
         title: "Submission Error",
         description: "There was an error submitting your request. Please try again.",

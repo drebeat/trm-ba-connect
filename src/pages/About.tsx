@@ -29,14 +29,14 @@ const About = () => {
     },
     {
       letter: 'C',
-      word: 'Community',
-      description: 'Building strong relationships and supporting one another in faith.',
+      word: 'Consistency',
+      description: 'Living out our faith with steadfastness, discipline, and reliability in all we do.',
       icon: Users
     },
     {
       letter: 'A',
-      word: 'Apostolic',
-      description: 'Following the foundational teachings and practices of the early church.',
+      word: 'Accountability',
+      description: 'Taking responsibility for our actions and growth, staying open to correction, and walking in mutual trust with others.',
       icon: Eye
     },
     {
@@ -78,9 +78,7 @@ const About = () => {
                 <h2 className="font-heading text-2xl md:text-3xl font-bold text-secondary">Our Vision</h2>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                To build a generation of believers with renewed minds, transformed by the Word of God, 
-                walking in divine purpose, and impacting their communities and the world with the 
-                love and power of Christ.
+                To establish the Kingdom of God in the heart of men.
               </p>
             </div>
 
@@ -93,9 +91,7 @@ const About = () => {
                 <h2 className="font-heading text-2xl md:text-3xl font-bold text-secondary">Our Mission</h2>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                To teach, equip, and empower believers through sound biblical doctrine, 
-                passionate worship, genuine fellowship, and practical application of God's Word, 
-                fostering spiritual maturity and kingdom advancement.
+                To equip and empower men to disciple nations, transform lives and communities through the power of Christ.
               </p>
             </div>
           </div>
@@ -224,10 +220,10 @@ const About = () => {
                     <span className="text-primary-foreground text-sm font-bold">1</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg text-secondary mb-2">Biblical Foundation</h3>
+                    <h3 className="font-semibold text-lg text-secondary mb-2"> Self-discovery & Identity Formation</h3>
                     <p className="text-muted-foreground">
-                      Every aspect of our ministry is grounded in the authority and truth of Scripture, 
-                      ensuring that our teaching, worship, and practices align with God's Word.
+                     Equip men to understand their God-given 
+                      identity, gifts, and purpose.
                     </p>
                   </div>
                 </div>
@@ -237,10 +233,11 @@ const About = () => {
                     <span className="text-primary-foreground text-sm font-bold">2</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg text-secondary mb-2">Spiritual Growth</h3>
+                    <h3 className="font-semibold text-lg text-secondary mb-2">Skill Development & Professional Excellence</h3>
                     <p className="text-muted-foreground">
-                      We are committed to fostering an environment where believers can mature in their faith, 
-                      develop their spiritual gifts, and discover their calling in God's kingdom.
+                      Train individuals in practical and 
+                      professional skills to engage the world as competent, confident contributors to 
+                      society.
                     </p>
                   </div>
                 </div>
@@ -250,10 +247,38 @@ const About = () => {
                     <span className="text-primary-foreground text-sm font-bold">3</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg text-secondary mb-2">Community Impact</h3>
+                    <h3 className="font-semibold text-lg text-secondary mb-2">Faith-Secular Integration</h3>
                     <p className="text-muted-foreground">
-                      Our ministry extends beyond the church walls as we actively engage in community 
-                      service, outreach programs, and initiatives that demonstrate Christ's love in action.
+                      Help believers integrate their faith into every area of 
+                      life—career, business, education, and social engagement—breaking the divide 
+                      between “church life” and “real life.”
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-primary-foreground text-sm font-bold">4</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg text-secondary mb-2">Spiritual Formation & Discipleship</h3>
+                    <p className="text-muted-foreground">
+                      Nurture spiritual growth through biblical 
+                      teaching, prayer, and mentorship
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-primary-foreground text-sm font-bold">5</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg text-secondary mb-2">Leadership & Kingdom Impact</h3>
+                    <p className="text-muted-foreground">
+                     Raise visionary leaders who influence culture with 
+                      Kingdom values and make meaningful contributions to their communities and 
+                      beyond.
                     </p>
                   </div>
                 </div>
