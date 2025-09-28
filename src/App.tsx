@@ -23,10 +23,10 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<Blog />} />
-          <Route path="/prayers" element={<Prayer />} />
-          <Route path="/programss" element={<Programs />} />
+          <Route path="/prayer" element={<Prayer />} />
+          <Route path="/programsss" element={<Programs />} />
           <Route path="/contacts" element={<Contact />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE *****/}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
