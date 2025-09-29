@@ -6,20 +6,20 @@ const Hero = () => {
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* YouTube Video Background */}
       <div className="absolute inset-0 w-full h-full">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/fLeJJPxua3E?autoplay=1&mute=1&loop=1&playlist=fLeJJPxua3E&controls=0&modestbranding=1&rel=0"
-pi=1"
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{
-            width: '100vw',
-            height: '100vh',
-            minWidth: '100%',
-            minHeight: '100%',
-          }}
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-          frameBorder="0"
-        />
+    <iframe
+  src="https://www.youtube-nocookie.com/embed/fLeJJPxua3E?autoplay=1&mute=1&loop=1&playlist=fLeJJPxua3E&controls=0&modestbranding=1&rel=0"
+  className="absolute inset-0 w-full h-full object-cover"
+  style={{
+    width: '100vw',
+    height: '100vh',
+    minWidth: '100%',
+    minHeight: '100%',
+  }}
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+  frameBorder="0"
+/>
+
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
