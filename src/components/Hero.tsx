@@ -3,7 +3,26 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section className="relative hero-gradient min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      {/* YouTube Video Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <iframe
+          src="https://www.youtube.com/embed/fLeJJPxua3E?autoplay=1&mute=1&loop=1&playlist=fLeJJPxua3E&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0&cc_load_policy=0&playsinline=1&enablejsapi=1"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{
+            width: '100vw',
+            height: '100vh',
+            minWidth: '100%',
+            minHeight: '100%',
+          }}
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+          frameBorder="0"
+        />
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
+      </div>
+      
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 border border-white/20 rounded-full"></div>
