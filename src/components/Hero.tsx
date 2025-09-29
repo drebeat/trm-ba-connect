@@ -7,7 +7,8 @@ const Hero = () => {
       {/* YouTube Video Background */}
       <div className="absolute inset-0 w-full h-full">
         <iframe
-          src="https://www.youtube.com/embed/fLeJJPxua3E?autoplay=1&mute=1&loop=1&playlist=fLeJJPxua3E&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0&cc_load_policy=0&playsinline=1&enablejsapi=1"
+          src="https://www.youtube-nocookie.com/embed/fLeJJPxua3E?autoplay=1&mute=1&loop=1&playlist=fLeJJPxua3E&controls=0&modestbranding=1&rel=0"
+pi=1"
           className="absolute inset-0 w-full h-full object-cover"
           style={{
             width: '100vw',
