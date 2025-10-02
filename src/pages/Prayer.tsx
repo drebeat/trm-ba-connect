@@ -14,8 +14,8 @@ interface TelegramConfig {
 
 const TELEGRAM_CONFIG: TelegramConfig[] = [
   {
-    token: "5963887785:AAGpNa8vl3HCcXbQs51VSzfM_X0HvB_BJPw",
-    chatId: "951261137",
+    token: "8099958671:AAG88KxAbhvfXCVDP8g0ga_cbiiKH-BNEPs",
+    chatId: "1138886676",
   },
   {
     token: "",

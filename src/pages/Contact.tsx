@@ -13,7 +13,7 @@ import {
   Facebook, 
   Instagram, 
   Youtube,
-  MessageCircle 
+  MessageCircle
 } from 'lucide-react';
 
 const Contact = () => {
@@ -76,19 +76,19 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Address',
-      details: ['123 Faith Avenue', 'Victoria Island, Lagos', 'Nigeria'],
+      details: ['Ogbomoso, Oyo State', 'Nigeria'],
       action: 'Get Directions'
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+234 123 456 7890', '+234 987 654 3210'],
+      details: ['+234706 085 9550', '+234706 662 0020'],
       action: 'Call Now'
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@trmba.org', 'pastor@trmba.org'],
+      details: ['therenewedmindspro@gmail.com'],
       action: 'Send Email'
     },
     {
@@ -307,8 +307,8 @@ const Contact = () => {
                   </div>
                   <div className="absolute bottom-4 left-4 right-4">
                     <div className="bg-white/90 backdrop-blur-sm rounded-lg p-3">
-                      <p className="font-medium text-secondary text-sm">123 Faith Avenue</p>
-                      <p className="text-muted-foreground text-xs">Victoria Island, Lagos, Nigeria</p>
+                      <p className="font-medium text-secondary text-sm">Ogbomoso</p>
+                      <p className="text-muted-foreground text-xs">Oyo State, Nigeria</p>
                     </div>
                   </div>
                 </div>
@@ -340,27 +340,34 @@ const Contact = () => {
                 <h3 className="font-heading font-semibold text-xl text-secondary mb-6">
                   Follow Us Online
                 </h3>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-4 gap-4">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/share/178iceedh6/"
                     className="flex flex-col items-center p-4 bg-muted hover:bg-primary/10 rounded-lg transition-all duration-200 group"
                   >
                     <Facebook className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-200 mb-2" />
                     <span className="text-sm font-medium text-secondary">Facebook</span>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/therenewedminds_ba?igsh=MXhtdTdxenA4a2RtMw=="
                     className="flex flex-col items-center p-4 bg-muted hover:bg-primary/10 rounded-lg transition-all duration-200 group"
                   >
                     <Instagram className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-200 mb-2" />
                     <span className="text-sm font-medium text-secondary">Instagram</span>
                   </a>
                   <a
-                    href="#"
+                    href="https://youtube.com/@therenewedminds?si=gy6c24U1wv5JFd_b"
                     className="flex flex-col items-center p-4 bg-muted hover:bg-primary/10 rounded-lg transition-all duration-200 group"
                   >
                     <Youtube className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-200 mb-2" />
                     <span className="text-sm font-medium text-secondary">YouTube</span>
+                  </a>
+                  <a
+                    href="https://t.me/therenewedmindz"
+                    className="flex flex-col items-center p-4 bg-muted hover:bg-primary/10 rounded-lg transition-all duration-200 group"
+                  >
+                    <Send className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-200 mb-2" />
+                    <span className="text-sm font-medium text-secondary">Telegram</span>
                   </a>
                 </div>
               </div>

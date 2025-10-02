@@ -288,30 +288,36 @@ const About = () => {
             {/* Leadership Culture */}
             <div>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-8">
-                Leadership Culture
+              Our Culture:
+            
               </h2>
+              <h6 className="text-lg md:text-lg text-secondary mb-8">
+
+              At TRM-BA, we are Intelligent, Simple, Loving, Courageous, Passionate, Hospitable, 
+              Empathetic, and Accountable.
+              </h6>
               <div className="space-y-6">
                 <div className="card-elegant p-6">
-                  <h3 className="font-semibold text-lg text-secondary mb-3">Servant Leadership</h3>
+                  <h3 className="font-semibold text-lg text-secondary mb-3">Intelligent</h3>
                   <p className="text-muted-foreground">
-                    Our leaders model the servant leadership of Christ, prioritizing the needs of 
-                    others and leading with humility, integrity, and genuine care for those they serve.
+                    We engage the world with renewed minds. Every TRM member is committed to deep 
+                    thinking, continuous learning, and godly wisdom in every field of influence.
                   </p>
                 </div>
 
                 <div className="card-elegant p-6">
-                  <h3 className="font-semibold text-lg text-secondary mb-3">Empowerment & Mentorship</h3>
+                  <h3 className="font-semibold text-lg text-secondary mb-3">Simple</h3>
                   <p className="text-muted-foreground">
-                    We believe in raising up the next generation of leaders through intentional 
-                    mentorship, training programs, and opportunities for growth and development.
+                    We value authenticity over performance. We live free of pretence, communicate clearly, and 
+                    walk in humility, making the message of Christ accessible and relatable.
                   </p>
                 </div>
 
                 <div className="card-elegant p-6">
-                  <h3 className="font-semibold text-lg text-secondary mb-3">Collaborative Ministry</h3>
+                  <h3 className="font-semibold text-lg text-secondary mb-3">Loving</h3>
                   <p className="text-muted-foreground">
-                    Our leadership approach emphasizes teamwork, shared vision, and the recognition 
-                    that every member has valuable gifts to contribute to the body of Christ.
+                    Rooted in the love of God, we treat everyone with genuine care, patience, and kindness, 
+                    without discrimination or hidden motives..
                   </p>
                 </div>
               </div>

@@ -6,19 +6,16 @@ const Hero = () => {
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* YouTube Video Background */}
       <div className="absolute inset-0 w-full h-full">
-    <iframe
-  src="https://www.youtube-nocookie.com/embed/fLeJJPxua3E?autoplay=1&mute=1&loop=1&playlist=fLeJJPxua3E&controls=0&modestbranding=1&rel=0"
-  className="absolute inset-0 w-full h-full object-cover"
-  style={{
-    width: '100vw',
-    height: '100vh',
-    minWidth: '100%',
-    minHeight: '100%',
-  }}
-  allow="autoplay; encrypted-media"
-  allowFullScreen
-  frameBorder="0"
-/>
+    <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover"
+  >
+  <source src="/vid.mp4" type="video/mp4" />
+</video>
+
 
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/50"></div>
@@ -76,21 +73,21 @@ const Hero = () => {
                 <div className="flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg mb-3 mx-auto">
                   <Users className="w-6 h-6 text-primary" />
                 </div>
-                <div className="font-heading font-bold text-2xl text-white mb-1">500+</div>
+                <div className="font-heading font-bold text-2xl text-white mb-1">100+</div>
                 <div className="text-white/70 text-sm">Members</div>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg mb-3 mx-auto">
                   <BookOpen className="w-6 h-6 text-primary" />
                 </div>
-                <div className="font-heading font-bold text-2xl text-white mb-1">15+</div>
+                <div className="font-heading font-bold text-2xl text-white mb-1">2+</div>
                 <div className="text-white/70 text-sm">Years</div>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg mb-3 mx-auto">
                   <Heart className="w-6 h-6 text-primary" />
                 </div>
-                <div className="font-heading font-bold text-2xl text-white mb-1">1000+</div>
+                <div className="font-heading font-bold text-2xl text-white mb-1">Countless</div>
                 <div className="text-white/70 text-sm">Lives Touched</div>
               </div>
             </div>

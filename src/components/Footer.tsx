@@ -7,6 +7,7 @@ import {
   Mail,
   Phone,
   MapPin,
+  Send
 } from "lucide-react";
 
 const Footer = () => {
@@ -115,21 +116,19 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div className="text-sm text-secondary-foreground/80">
-                  123 Faith Avenue
-                  <br />
-                  Lagos, Nigeria
+                  Ogbomoso, Oyo State
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <div className="text-sm text-secondary-foreground/80">
-                  +234 123 456 7890
+                  +234706 085 9550 <span className="text-sm px-2">or</span>+234706 662 0020
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <div className="text-sm text-secondary-foreground/80">
-                  info@trmba.org
+                 therenewedmindspro@gmail.com
                 </div>
               </div>
             </div>
@@ -156,12 +155,12 @@ const Footer = () => {
                 >
                   <Youtube className="w-5 h-5" />
                 </a>
-                {/* <a
+                 <a
                   href="https://t.me/therenewedmindz"
                   className="w-10 h-10 bg-background/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:shadow-glow"
                 >
-                  <Telegram className="w-5 h-5" />
-                </a> */}
+                   <Send className="w-5 h-5" />
+                </a> 
               </div>
             </div>
           </div>
